@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    font-family: "Inria Serif", serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('./images/red.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* height: 100vh; Ensure body takes full viewport height */
+    overflow:auto; /* Prevent scrolling */
+}
+
+#content {
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure content takes full available height */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    color: #660000;
+    font-size: 10px;
+    align-items: center;
+    background: #660000;
+    box-shadow: 3px 3px 5px #66000055;
+    box-sizing: border-box; /* Ensure padding is included in header width */
+}
+
+button {
+    background-color: #660000;
+    border: none;
+    color: #000;
+    font-size: 32px;
+}
+
+button:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    gap: 50px;
+}
+
+.logo {
+    background: url('./images/re.png');
+    width: 64px;
+    height: 64px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    position: absolute;
+    color: #660000;
+    text-align: left;
+    font-size: 100px;
+    align-items: center;
+    font-weight: bold;
+    top:50%;
+    left:30px;
+}
+
+.sub-info {
+    color: #660000;
+    text-align: left; 
+    font-size: 48px;
+    align-items: center;
+    position: absolute;
+    top:65%;
+    left:30px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    margin-left: 40px;
+    height: 100%; /* Ensure hero takes full available height */
+}
+
+.blackboard {
+    position: relative;
+    margin-top: 30px;
+    width: 80%;
+    border: #660000 solid 12px;
+    border-top: #800000 solid 12px;  /* A slightly darker shade of red */
+    border-left: #730000 solid 12px; /* Another slightly different shade of red */
+    border-bottom: #520000 solid 12px; /* Even darker shade of red */
+    box-shadow: 0px 0px 6px 5px rgba(58, 18, 13, 0),
+                0px 0px 0px 2px #660000, /* Shadow with the main red color */
+                0px 0px 0px 4px #800000, /* Shadow with the darker red color */
+                3px 4px 8px 5px rgba(0, 0, 0, 0.5);
+    /* background-image: radial-gradient(circle at left 30%, rgba(34, 34, 34, 0.3), rgba(34, 34, 34, 0.3) 80px, rgba(34, 34, 34, 0.5) 100px, rgba(51, 51, 51, 0.5) 160px, rgba(51, 51, 51, 0.5)),
+                      linear-gradient(215deg, transparent, transparent 100px, #222 260px, #222 320px, transparent),
+                      radial-gradient(circle at right, #111, rgba(51, 51, 51, 1)); */
+    background-color: #141414;
+    /* height: 80vh;  */
+}
+
+.container {
+    color:#800000;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px;
+    gap:50px;
+}
+
+.item-card {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    gap:10px;
+    align-content: start;
+}
+
+
+.item-card img{
+    width:200px;
+    height:200px;
+    border-radius: 100px;
+    border: 5px solid #800000;
+}
+
+.name{
+    font-size:24px;
+    font-weight:900;
+    text-align: center;
+}
+
+.menu-header{
+    color:#800000;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+
+.contact{
+    display: flex;
+    background-color: #141414;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:30px;
+    margin-top: 30px;
+    color:#800000;
+    font-size: 48px;
+    border-radius: 30px;
+    width: 30%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding:50px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+form input{
+    width: 100%;
+    line-height: 30px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 3px solid #800000;
+    padding:5px
+
+}
+
+form textarea{
+    width: 100%;
+    height: 250px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 3px solid #800000;
+    padding:5px
+}
+
+#submit{
+    width:50%;
+    color:#800000;
+    background-color: #141414;
+    font-weight: bold;
+}
+
+#submit:hover{
+    color: #141414;
+    background-color: #800000;
+}
